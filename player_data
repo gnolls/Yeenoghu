@@ -1,0 +1,135 @@
+
+CREATE DATABASE DnD;
+CREATE TABLE character(
+        char_id INTERGER
+        pl_id INTERGER
+        char_key INTERGER
+        char_name VARCHAR
+        race_key INTERGER
+        char_gender INTERGER
+        char_age INTERGER
+        char_size VARCHAR
+        char_height VARCHAR
+        char_weight INTERGER
+        char_deiti VARCHAR
+        char_align VARCHAR 
+        char_ecl  VARCHAR
+);
+
+CREATE TABLE player(
+        player_id INTEGER,
+        player_name VARCHAR(50),
+        PRIMARY KEY(player_id)
+);
+
+CREATE TABLE weapon(
+  weapon_id INTEGER 
+  weapon_key VARCHAR(40),  
+  weapon_name VARCHAR(50),
+
+  weapon_type_key INTEGER,  
+  weapon_price FLOAT,  
+  weapon_damage_s VARCHAR(3), 
+  weapon_damage_m VARCHAR(3),  
+  weapon_critical_fact INTEGER, 
+  weapon_crit_range INTEGER,  
+  weapon_range FLOAT
+  weapon_weight FLOAT
+  weapon_damage_type_key VARCHAR(40),
+  weapon_damage_bonus INTEGER,
+  PRIMARY KEY(weapon_id)
+);
+
+CREATE TABLE weapon_damage_type(
+  weapon_damage_type_id INTEGER,
+  weapon_damage_type_key VARCHAR(40),
+  weapon_damage_type_name VARCHAR(50),
+  PRIMARY KEY(weapon_damage_type_id)
+);
+
+CREATE TABLE weapon_type(
+  weapon_type_id INTEGER,
+  weapon_type_key VARCHAR(40),
+  weapon_type_name VARCHAR(50),
+  weapon_type_type VARCHAR(10),     
+  weapon_type_cat VARCHAR(20),    
+  PRIMARY KEY(weapon_type_id)
+);
+
+CREATE TABLE armor(
+        armor_id INTEGER,
+        armor_key VARCHAR(40),   
+        armor_name VARCHAR(50),
+        armor_type_key INTEGER
+        armor_bonus INTEGER 
+        armor_dex_max INTEGER 
+        armor_check_penality INTEGER 
+        armor_spell_failure INTEGER 
+        armor_weight FLOAT
+        armor_speed_s INTEGER 
+        armor_speed_m INTEGER 
+        armor_price FLOAT,                        
+        PRIMARY KEY(armor_id)
+);
+
+CREATE TABLE armor_type(
+        armor_type_id INTEGER,
+        armor_type_key VARCHAR(40),
+        armor_type_name VARCHAR(50),
+        PRIMARY KEY(armor_type_id)
+);
+
+CREATE TABLE spell(
+        spell_id INTERGER
+        spell_key INTERGER
+        spell_name VARCHAR
+        spell_goup_key INTERGER
+        spell_level INTERGER
+);
+
+CREATE TABLE spell_group(
+        spell_goup_id INTERGER
+        spell_goup_key INTERGER
+        spell_goup_name VARCHAR
+);
+
+CREATE TABLE class(
+        class_id INTERGER
+        class_key INTERGER
+        class_name VARCHAR
+);
+
+CREATE TABLE class_stat(
+        class_stat_id INTERGER
+        class_key INTERGER
+        class_stat_level INTERGER
+        class_stat_reflex INTERGER
+        
+);
+
+CREATE TABLE class_abilities(
+        class_abilities_id INTERGER
+        class_abilities_key INTERGER
+        class_abilities_name VARCHAR(40)
+        class_key INTERGER
+        class_abilities_level INTERGER
+);
+
+CREATE TABLE class_spell_group(
+        class_spell_goup_id INTERGER
+        class_key INTERGER
+        spell_goup_key INTERGER
+);
+
+CREATE TABLE class_spell(
+        class_spell_id INTERGER
+        class_key INTERGER
+        spell_key INTERGER
+);
+
+CREATE TABLE char_class(
+        char_class_id INTERGER
+        char_key INTERGER
+        class_key INTERGER
+        class_level INTERGER
+);
