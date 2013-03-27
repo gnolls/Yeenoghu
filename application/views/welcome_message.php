@@ -18,7 +18,7 @@
 
           <?php echo validation_errors(); ?>
 
-          <?php echo form_open('create') ?>
+          <?php echo form_open('login') ?>
 
 	  <label for="username">Username</label> 
 	  <input type="input" name="username" /><br />
@@ -31,4 +31,4 @@
 	  </form>
 	</div>
 
-<!- Footer in footer.php ->
+<!- Footer in template/footer.php ->

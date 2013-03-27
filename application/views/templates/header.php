@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Dungeon Organizer</title>
+	<title> <?php echo $title; ?> </title>
 
 	<style type="text/css">
 
