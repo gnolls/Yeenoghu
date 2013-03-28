@@ -3,12 +3,12 @@
 		<code>application/views/welcome_message.php</code>
 
 		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/welcome.php</code>
+		<code>application/controllers/pages/welcome.php</code>
 
 		<p>you should start by reading the <a href="http://ellislab.com/codeigniter/user-guide/">User Guide</a>.</p>
 	</div>
-	
-        <div id="login">
+<?php if($loginInfo['nLog'] === TRUE) { ?>	
+  <div id="login">
 	  <h2>Log in</h2>
 
           <?php echo validation_errors(); ?>
@@ -25,5 +25,10 @@
 
 	  </form>
 	</div>
+<?php }else { ?>
+	<div id="login">
+	Welcome back <?php echo $loginInfo['username']; ?>!
+	</div>
+<?php } ?>
 
 <!- Footer in template/footer.php ->

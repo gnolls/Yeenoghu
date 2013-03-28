@@ -24,7 +24,7 @@ class Phpbb
 		// Set the variables scope
 		global $phpbb_root_path, $phpEx, $user, $auth, $cache, $db, $config, $template, $table_prefix;
 		define('IN_PHPBB', TRUE);
-		define('FORUM_ROOT_PATH', './forum/');
+		define('FORUM_ROOT_PATH', '/var/www/gnolls/phpBB3/');
 		$phpbb_root_path = (defined('PHPBB_ROOT_PATH')) ? PHPBB_ROOT_PATH : FORUM_ROOT_PATH;
 		$phpEx = substr(strrchr(__FILE__, '.'), 1);
 		// Include needed files

@@ -108,6 +108,6 @@
 
 <div id="container" class="clearfix">
 	<h1>Welcome to D20tools.org</h1>
-        <div>
-	<?php echo ul($nav['links'], $nav['attributes']); ?>
+  <div>
+		<?php echo ul($nav['links'], $nav['attributes']); ?>
 	</div>	

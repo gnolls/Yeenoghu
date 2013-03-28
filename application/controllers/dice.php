@@ -28,7 +28,7 @@
 						$menu = new Nav;
 						$data['nav'] = $menu->get_Nav();
             $data['title'] = "Your fate is...";
-            $this->form_validation->set_rules('numSides', 'Number of Sides', 'required');
+            $this->form_validation->set_rules('numSides', 'Number of Sides', 'xss_clean|required|is_natural_no_zero');
            
             if($this->form_validation->run() == FALSE) //check to see if the filled out the form
 	   			  {

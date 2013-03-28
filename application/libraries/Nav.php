@@ -6,7 +6,10 @@ class Nav
 
 	public function get_Nav() {
     $atr = array('id' => 'nav');
-	  $links = array(anchor(base_url(), 'Home'), anchor(site_url('dice/index'), 'Roll Dice') );
+	  $links = array(anchor(base_url(), 'Home'),
+									 anchor(site_url('dice/index'), 'Roll Dice'),
+								 	 anchor("http://d20tools.net/forum/", 'Forum')
+								  );
 		return array('attributes' => $atr, 'links' => $links);
 	}  
 
