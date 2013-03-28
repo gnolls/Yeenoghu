@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php echo doctype('html5'); ?>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -29,8 +29,8 @@
 		border-bottom: 1px solid #D0D0D0;
 		font-size: 19px;
 		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
+		margin: 0 0 0px 0;
+		padding: 14px 15px 14px 15px;
 	}
 
 	code {
@@ -67,6 +67,26 @@
 		padding: 0 10px 0 10px;
 		margin: 20px 0 0 0;
 	}
+	#nav {
+		background-color: #fff;
+		width: 100%;
+		float: left;
+		list-style: none;
+		margin:0 0 5px 0;
+		padding: 0;
+		border-bottom: 1px solid #D0D0D0;
+	}
+	#nav li { float:left; }
+	#nav li a {
+		display: block;
+		padding: 8px 30px;
+		text-decoration: none;
+		font-weight: bold;
+		border-right: 1px solid #D0D0D0;
+	}
+	#nav li a:hover{
+		color:#c00;
+		background-color: #000; }
 
 	#container {
 		margin: 10px;
@@ -84,4 +104,10 @@
 	</style>
 </head>
 
+<body>
 
+<div id="container" class="clearfix">
+	<h1>Welcome to D20tools.org</h1>
+        <div>
+	<?php echo ul($nav['links'], $nav['attributes']); ?>
+	</div>	
