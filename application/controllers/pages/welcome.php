@@ -7,7 +7,7 @@ class Welcome extends CI_Controller {
    public function __construct()
    {
 	 	parent::__construct();
-	 	$this->load->model('die_model');
+//	 	$this->load->model('die_model');
 		$this->load->database();
 		$this->load->driver('session');
 		$this->load->library('phpbb');
