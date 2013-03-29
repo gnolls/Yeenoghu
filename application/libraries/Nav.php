@@ -8,6 +8,7 @@ class Nav
     $atr = array('id' => 'nav');
 	  $links = array(anchor(base_url(), 'Home'),
 									 anchor(site_url('dice/index'), 'Roll Dice'),
+									 anchor(site_url('spells/index'), 'Spells'),
 								 	 anchor("http://d20tools.net/forum/", 'Forum')
 								  );
 		return array('attributes' => $atr, 'links' => $links);
