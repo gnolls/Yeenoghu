@@ -44,7 +44,7 @@
 		padding: 12px 10px 12px 10px;
 	}
 	login {
-         	background-color: #fff;
+    background-color: #fff;
 		margin: 40px;
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
 		color: #4F5155;
@@ -57,6 +57,7 @@
 		border-right: 1px solid #D0D0D0;
 		float:left;
 		width:75%;
+		min-height: 200px;
 	}
 
 	p.footer {

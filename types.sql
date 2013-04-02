@@ -29,7 +29,7 @@ CREATE TABLE spell (
   level VARCHAR(255),
   components VARCHAR,
   casting_time VARCHAR(255),
-  range VARCHAR(255),
+  spell_range VARCHAR(255),
   target VARCHAR(255),
   area VARCHAR(255),
   effect VARCHAR(255),

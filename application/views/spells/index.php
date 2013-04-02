@@ -1,4 +1,5 @@
 <div id="body">
+<h2> Spells: </h2>
 <?php foreach ($spells as $spell_item): ?>
 
 	<h2><?php echo $spell_item['name']; ?></h2>
