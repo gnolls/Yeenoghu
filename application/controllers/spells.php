@@ -31,4 +31,9 @@ class Spells extends CI_Controller {
 		$this->load->view('spells/index', $data);
 		$this->load->view('templates/footer');
 	}
+
+	public function view($spell_id)
+	{
+		$data['spells'] = $this->spells_model->get_spells($spell_id);
+	}
 }
