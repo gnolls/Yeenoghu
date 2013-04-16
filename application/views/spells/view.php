@@ -1,10 +1,8 @@
 <div id="body">
 <h2> Spells: </h2>
-<?php foreach ($spells as $spell_item): ?>
-
-	<h2><?php echo $spell_item['class']; ?></h2>
-	<b><?php echo $spell_item['name']; ?></b>
-	<p><?php echo $spell_item['description']; ?> </p>
+	<h2><?php echo $spells['class']; ?></h2>
+	<b><?php echo $spells['name']; ?>:</b>
+	<p><?php echo $spells['description']; ?> </p>
 <?php endforeach ?>
 </div>
 
