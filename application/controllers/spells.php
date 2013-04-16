@@ -32,7 +32,7 @@ class Spells extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	public function view($spell_id)
+	public function view($spell_id = FALSE)
 	{
 		$data['title'] = "View Spells";
 		$menu = new Nav;
