@@ -3,7 +3,6 @@
 	<h2><?php echo $spells['class']; ?></h2>
 	<b><?php echo $spells['name']; ?>:</b>
 	<p><?php echo $spells['description']; ?> </p>
-<?php endforeach ?>
 </div>
 
 <?php if($loginInfo['nLog'] === TRUE) { ?>	
