@@ -1,9 +1,13 @@
 <div id="body">
-<h2> Spells: </h2>
+<h1> All Spells </h1>
 <?php foreach ($spells as $spell_item): ?>
-
-	<h2><?php echo $spell_item['name']; ?></h2>
-	<p><?php echo $spell_item['description']; ?> </p>
+	<p>
+		<b>Class: </b><?php echo $spells['class']; ?>
+		<br />
+		<b>Spell Name: </b> <?php echo anchor("spells/views/$spells['spell_id']", $spells['name']); ?>
+		<br />
+		<b>Description: </b><?php echo $spells['description']; ?> 
+	</p>
 <?php endforeach ?>
 </div>
 
