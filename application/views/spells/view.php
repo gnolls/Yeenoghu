@@ -1,8 +1,11 @@
 <div id="body">
-<h2> Spells: </h2>
-	<h2><?php echo $spells['class']; ?></h2>
-	<b><?php echo $spells['name']; ?>:</b>
-	<p><?php echo $spells['description']; ?> </p>
+<h1> The Spell you requested </h2>
+  <p><b>Class: </b><?php echo $spells['class']; ?>
+	<br />
+	<b>Spell Name: </b> <?php echo $spells['name']; ?>
+	<br />
+  <b>Description: </b><?php echo $spells['description']; ?> </p>
+	
 </div>
 
 <?php if($loginInfo['nLog'] === TRUE) { ?>	
