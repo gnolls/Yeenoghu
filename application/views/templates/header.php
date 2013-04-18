@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title> <?php echo $title; ?> </title>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/styles.css"/>
 
+<!--
 	<style type="text/css">
 
 	::selection { background-color: #E13300; color: white; }
@@ -103,12 +105,17 @@
    	clear: both;
 }
 	</style>
+-->
 </head>
 
 <body>
 
-<div id="container" class="clearfix">
-	<h1>Welcome to D20tools.org</h1>
-  <div>
+	<div class="headwrap">
+	  <header>
+
+		<nav>
 		<?php echo ul($nav['links'], $nav['attributes']); ?>
-	</div>	
+		</nav>
+    </header>
+  </div>	
+<div id="container" class="wrapper">
