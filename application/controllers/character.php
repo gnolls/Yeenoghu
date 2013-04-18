@@ -31,7 +31,7 @@ class Character extends CI_Controller {
 		{
 		 $data['loginInfo']['nLog'] = TRUE;
 		 $this->load->view('templates/header', $data);
-		 $this->load->view('pages/welcome_message');
+		 $this->load->view('welcome_message');
 		 $this->load->view('templates/footer', $data);
 		}
 	}

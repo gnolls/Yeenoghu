@@ -10,9 +10,9 @@
 
 	<div class="headwrap">
 	  <header>
-
+		<img src="_/img/title.png" alt="Dungeon Organizer" />
 		<nav>
-		<?php echo ul($nav['links'], $nav['attributes']); ?>
+			<?php echo ul($nav['links'], $nav['attributes']); ?>
 		</nav>
 		<?php if($loginInfo['nLog'] === TRUE) { ?>	
   <div id="login">
