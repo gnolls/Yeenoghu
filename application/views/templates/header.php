@@ -10,7 +10,7 @@
 
 	<div class="headwrap">
 	  <header>
-		<img src="_/img/title.png" alt="Dungeon Organizer" />
+		<img src="<?php echo base_url();?>assets/img/title.png" alt="Dungeon Organizer" />
 		<nav>
 			<?php echo ul($nav['links'], $nav['attributes']); ?>
 		</nav>
