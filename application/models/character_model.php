@@ -20,5 +20,16 @@ class Character_model extends CI_Model {
 		
 	}
 
+	public function set_character($userId)
+	{
+		$this->load->helper('url');
+
+		$data = array(
+			'user_id' => $userId;
+			'name' => $this->input->post('title');
+			'class' => $this->input->post('class');
+			)
+	}
+
 }
 
