@@ -62,7 +62,7 @@ class Character extends CI_Controller {
 			}
 			else
 			{
-				$this->character_model->set_character();
+				$this->character_model->set_character($userId);
 				$this->load->view('templates/header', $data);
 				$this->load->view('character/success', $data); //load the successful creation page
 				$this->load->view('templates/footer');
