@@ -14,7 +14,7 @@ class Character_model extends CI_Model {
 			return FALSE;
 		}
 		
-			$query = $this->db->get_where('character', array('user_id' => $userID));
+			$query = $this->db->get_where('characters', array('user_id' => $userID));
 			return $query->row_array();	
 	
 		
@@ -30,7 +30,7 @@ class Character_model extends CI_Model {
 			'class' => $this->input->post('class')
 			);
 
-		return $this->db->insert('character', $data);
+		return $this->db->insert('characters', $data);
 	}
 
 }
