@@ -21,14 +21,16 @@
           <?php echo validation_errors(); ?>
 
           <?php echo form_open('login') ?>
-
-	  <label for="username">Username</label> 
-	  <input type="input" name="username" /><br />
-
-	  <label for="password">Password</label>
-	  <input type="password" name="password" /><br />
-	
-	  <input type="submit" name="submit" value="Log in" /> 
+		<form action="/forum/ucp.php?mode=login" method="post">
+		<input type="text" name="username" size="18" placeholder="Username">
+		<input type="password" name="password" size="18" placeholder="Password">
+		<input type="checkbox" name="remember" value="yes" checked="">
+		<input type="hidden" name="autologin" value="on">
+		<input type="hidden" name="redirect" value="/">
+		<button value="Log in" name="login" type="submit">Log in</button>
+		<a href="/forum/ucp.php?mode=sendpassword">Forgotten password?</a>
+		<a href="/forum/ucp.php?mode=register">Register</a>
+		</form> 
 
 	  </form>
 	</div>
