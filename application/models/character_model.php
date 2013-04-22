@@ -28,7 +28,7 @@ class Character_model extends CI_Model {
 			'user_id' => $userId,
 			'name' => $this->input->post('title'),
 			'class' => $this->input->post('class')
-			)
+			);
 
 		return $this->db->insert('character', $data);
 	}
