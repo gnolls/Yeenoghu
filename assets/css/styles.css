@@ -194,7 +194,7 @@ header{
 
 nav{
 	display:block;
-	width:960px;
+	width:860px;
 	margin-top:0px;
 	padding:4px;
 }
@@ -224,8 +224,7 @@ nav a:active {color:#CDC092; text-decoration:underline;}
 #login 
 {
 	float:right;
-	
-
+	width:100px;
 }
 
 footer {

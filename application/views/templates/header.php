@@ -20,7 +20,6 @@
 
           <?php echo validation_errors(); ?>
 
-          <?php echo form_open('login') ?>
 		<form action="www.noleptr.com/phpBB3/ucp.php?mode=login" method="post">
 		<input type="text" name="username" size="18" placeholder="Username">
 		<input type="password" name="password" size="18" placeholder="Password">
