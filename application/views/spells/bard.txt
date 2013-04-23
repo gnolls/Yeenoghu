@@ -1,0 +1,164 @@
+Dancing Lights: Creates torches or other lights. : 0
+Daze: Humanoid creature of 4 HD or less loses next action. : 0
+Detect Magic: Detects spells and magic items within 60 ft. : 0
+Flare: Dazzles one creature (-1 on attack rolls). : 0
+Ghost Sound: Figment sounds. : 0
+Know Direction: You discern north. : 0
+Light: Object shines like a torch. : 0
+Lullaby: Makes subject drowsy; -5 on Spot and Listen checks, -2 on Will saves against sleep. : 0
+Mage Hand: 5-pound telekinesis. : 0
+Mending: Makes minor repairs on an object. : 0
+Message: Whispered conversation at distance. : 0
+Open/Close: Opens or closes small or light things. : 0
+Prestidigitation: Performs minor tricks. : 0
+Read Magic: Read scrolls and spellbooks. : 0
+Resistance: Subject gains +1 on saving throws. : 0
+Summon Instrument: Summons one instrument of the caster's choice. : 0
+Alarm: Wards an area for 2 hours/level. : 1
+Animate Rope: Makes a rope move at your command. : 1
+Cause Fear: One creature of 5 HD or less flees for 1d4 rounds. : 1
+Charm Person: Makes one person your friend. : 1
+Comprehend Languages: You understand all spoken and written languages. : 1
+Cure Light Wounds: Cures 1d8 damage +1/level (max +5). : 1
+Detect Secret Doors: Reveals hidden doors within 60 ft. : 1
+Disguise Self: Changes your appearance. : 1
+Erase: Mundane or magical writing vanishes. : 1
+Expeditious Retreat: Your speed increases by 30 ft. : 1
+Feather Fall: Objects or creatures fall slowly. : 1
+Grease: Makes 10-ft. square or one object slippery. : 1
+Hideous Laughter: Subject loses actions for 1 round/level. : 1
+Hypnotism: Fascinates 2d4 HD of creatures. : 1
+Identify: Determines properties of magic item. : 1
+Lesser Confusion: One creature is confused for 1 round. : 1
+Magic Mouth: Speaks once when triggered. : 1
+Magic Aura: Alters object's magic aura. : 1
+Obscure Object: Masks object against scrying. : 1
+Remove Fear: Suppresses fear or gives +4 on saves against fear for one subject + one per four levels. : 1
+Silent Image: Creates minor illusion of your design. : 1
+Sleep: Puts 4 HD of creatures into magical slumber. : 1
+Summon Monster I: Calls extraplanar creature to fight for you. : 1
+Undetectable Alignment: Conceals alignment for 24 hours. : 1
+Unseen Servant: Invisible force obeys your commands. : 1
+Ventriloquism: Throws voice for 1 min./level. : 1
+Alter Self: Assume form of a similar creature. : 2
+Animal Messenger: Sends a Tiny animal to a specific place. : 2
+Animal Trance: Fascinates 2d6 HD of animals. : 2
+Blindness/Deafness: Makes subject blind or deaf. : 2
+Blur: Attacks miss subject 20% of the time. : 2
+Calm Emotions: Calms creatures, negating emotion effects. : 2
+Cat's Grace: Subject gains +4 to Dex for 1 min./level. : 2
+Cure Moderate Wounds: Cures 2d8 damage +1/level (max +10). : 2
+Darkness: 20-ft. radius of supernatural shadow. : 2
+Daze Monster: Living creature of 6 HD or less loses next action. : 2
+Delay Poison: Stops poison from harming subject for 1 hour/level. : 2
+Detect Thoughts: Allows 'listening' to surface thoughts. : 2
+Eagle's Splendor: Subject gains +4 to Cha for 1 min./level. : 2
+Enthrall: Captivates all within 100 ft. + 10 ft./level. : 2
+Fox's Cunning: Subject gains +4 to Int for 1 min./level. : 2
+Glitterdust: Blinds creatures, outlines invisible creatures. : 2
+Heroism: Gives +2 on attack rolls, saves, skill checks. : 2
+Hold Person: Paralyzes one humanoid for 1 round/level. : 2
+Hypnotic Pattern: Fascinates (2d4 + level) HD of creatures. : 2
+Invisibility: Subject is invisible for 1 min./level or until it attacks. : 2
+Locate Object: Senses direction toward object (specific or type). : 2
+Minor Image: As silent image, plus some sound. : 2
+Mirror Image: Creates decoy duplicates of you (1d4 +1 per three levels, max 8). : 2
+Misdirection: Misleads divinations for one creature or object. : 2
+Pyrotechnics: Turns fire into blinding light or choking smoke. : 2
+Rage: Gives +2 to Str and Con, +1 on Will saves, -2 to AC. : 2
+Scare: Panics creatures of less than 6 HD. : 2
+Shatter: Sonic vibration damages objects or crystalline creatures. : 2
+Silence: Negates sound in 20-ft. radius. : 2
+Sound Burst: Deals 1d8 sonic damage to subjects; may stun them. : 2
+Suggestion: Compels subject to follow stated course of action. : 2
+Summon Monster II: Calls extraplanar creature to fight for you. : 2
+Summon Swarm: Summons swarm of bats, rats, or spiders. : 2
+Tongues: Speak any language. : 2
+Whispering Wind: Sends a short message 1 mile/level. : 2
+Blink: You randomly vanish and reappear for 1 round/level. : 3
+Charm Monster: Makes monster believe it is your ally. : 3
+Clairaudience/Clairvoyance: Hear or see at a distance for 1 min./level. : 3
+Confusion: Subjects behave oddly for 1 round/level. : 3
+Crushing Despair: Subjects take -2 on attack rolls, damage rolls, saves, and checks. : 3
+Cure Serious Wounds: Cures 3d8 damage +1/level (max +15). : 3
+Daylight: 60-ft. radius of bright light. : 3
+Deep Slumber: Puts 10 HD of creatures to sleep. : 3
+Dispel Magic: Cancels magical spells and effects. : 3
+Displacement: Attacks miss subject 50%. : 3
+Fear: Subjects within cone flee for 1 round/level. : 3
+Gaseous Form: Subject becomes insubstantial and can fly slowly. : 3
+Geas, Lesser: Commands subject of 7 HD or less. : 3
+Glibness: You gain +30 bonus on Bluff checks, and your lies can escape magical discernment. : 3
+Good Hope: Subjects gain +2 on attack rolls, damage rolls, saves, and checks. : 3
+Haste: One creature/level moves faster, +1 on attack rolls, AC, and Reflex saves. : 3
+Illusory Script: Only intended reader can decipher. : 3
+Invisibility Sphere:Makes everyone within 10 ft. invisible. : 3
+Major Image: As silent image, plus sound, smell and thermal effects. : 3
+Phantom Steed: Magic horse appears for 1 hour/level. : 3
+Remove Curse: Frees object or person from curse. : 3
+Scrying: Spies on subject from a distance. : 3
+Sculpt Sound: Creates new sounds or changes existing ones. : 3
+Secret Page: Changes one page to hide its real content. : 3
+See Invisibility: Reveals invisible creatures or objects. : 3
+Sepia Snake Sigil: Creates text symbol that immobilizes reader. : 3
+Slow: One subject/level takes only one action/round, -1 to AC, reflex saves, and attack rolls. : 3
+Speak with Animals: You can communicate with animals. : 3
+Summon Monster III: Calls extraplanar creature to fight for you. : 3
+Tiny Hut: Creates shelter for ten creatures. : 3
+Break Enchantment: Frees subjects from enchantments, alterations, curses, and petrification. : 4
+Cure Critical Wounds: Cures 4d8 damage +1/level (max +20). : 4
+Detect Scrying: Alerts you of magical eavesdropping. : 4
+Dimension Door: Teleports you short distance. : 4
+Dominate Person: Controls humanoid telepathically. : 4
+Freedom of Movement: Subject moves normally despite impediments. : 4
+Hallucinatory Terrain: Makes one type of terrain appear like another (field into forest, or the like). : 4
+Hold Monster: As hold person, but any creature. : 4
+Invisibility, Greater: As invisibility, but subject can attack and stay invisible. : 4
+Legend Lore: Lets you learn tales about a person, place, or thing. : 4
+Locate Creature: Indicates direction to familiar creature. : 4
+Modify Memory: Changes 5 minutes of subject's memories. : 4
+Neutralize Poison: Immunizes subject against poison, detoxifies venom in or on subject. : 4
+Rainbow Pattern: Lights fascinate 24 HD of creatures. : 4
+Repel Vermin: Insects, spiders, and other vermin stay 10 ft. away. : 4
+Secure Shelter: Creates sturdy cottage. : 4
+Shadow Conjuration: Mimics conjuring below 4th level, but only 20% real. : 4
+Shout: Deafens all within cone and deals 5d6 sonic damage. : 4
+Speak with Plants: You can talk to normal plants and plant creatures. : 4
+Summon Monster IV: Calls extraplanar creature to fight for you. : 4
+Zone of Silence: Keeps eavesdroppers from overhearing conversations. : 4
+Cure Light Wounds, Mass: Cures 1d8 damage +1/level for many creatures. : 5
+Dispel Magic, Greater: As dispel magic, but +20 on check. : 5
+Dream: Sends message to anyone sleeping. : 5
+False Vision: Fools scrying with an illusion. : 5
+Heroism, Greater: Gives +4 bonus on attack rolls, saves, skill checks; immunity to fear; temporary hp. : 5
+Mind Fog: Subjects in fog get -10 to Wis and Will checks. : 5
+Mirage Arcana: As hallucinatory terrain, plus structures. : 5
+Mislead: Turns you invisible and creates illusory double. : 5
+Nightmare: Sends vision dealing 1d10 damage, fatigue. : 5
+Persistent Image: As major image, but no concentration required. : 5
+Seeming: Changes appearance of one person per two levels. : 5
+Shadow Evocation: Mimics evocation of lower than 5th level, but only 20% real. : 5
+Shadow Walk: Step into shadow to travel rapidly. : 5
+Song of Discord: Forces targets to attack each other. : 5
+Suggestion, Mass: As suggestion, plus one subject/level. : 5
+Summon Monster V: Calls extraplanar creature to fight for you. : 5
+Analyze Dweomer: Reveals magical aspects of subject. : 6
+Animate Objects: Objects attack your foes. : 6
+Cat's Grace, Mass: As cat's grace, affects one subject/level. : 6
+Charm Monster, Mass: As charm monster, but all within 30 ft. : 6
+Cure Moderate Wounds, Mass: Cures 2d8 damage +1/level for many creatures. : 6
+Eagle's Splendor, Mass: As eagle's splendor, affects one subject/level. : 6
+Eyebite: Target becomes panicked, sickened, and comatose. : 6
+Find the Path: Shows most direct way to a location. : 6
+Fox's Cunning, Mass: As fox's cunning, affects one subject/level. : 6
+Geas/Quest: As lesser geas, plus it affects any creature. : 6
+Heroes' Feast: Food for one creature/level cures and grants combat bonuses. : 6
+Irresistible Dance: Forces subject to dance. : 6
+Permanent Image: Includes sight, sound, and smell. : 6
+Programmed Image: As major image, plus triggered by event. : 6
+Project Image: Illusory double can talk and cast spells. : 6
+Scrying, Greater: As scrying, but faster and longer. : 6
+Shout, Greater: Devastating yell deals 10d6 sonic damage; stuns creatures, damages objects. : 6
+Summon Monster VI: Calls extraplanar creature to fight for you. : 6
+Sympathetic Vibration: Deals 2d10 damage/round to freestanding structure. : 6
+Veil: Changes appearance of group of creatures. : 6
