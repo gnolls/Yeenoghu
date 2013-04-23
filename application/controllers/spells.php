@@ -75,7 +75,7 @@ public function classes($class = FALSE)
 		 $data['loginInfo']['nLog'] = TRUE;
 		}
 
-		if(in_array($class.tolower(), $classes))
+		if(in_array(strtolower($class), $classes))
 		{
 			$data['class'] = $class;
 			$this->load->view('templates/header', $data);
