@@ -230,8 +230,7 @@ footer {
 	/*width:960px;*/
 	margin:10px auto 35px;
 	/*background: url(../img/footer-rule.png) no-repeat top center;*/
-	position:absolute;
-	bottom:0;
+	border-top: ;
 	text-align:center;
 	font-size:.8em;
 	color:#8B7241;
