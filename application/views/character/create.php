@@ -18,7 +18,7 @@
 	var grap_mod = rollDie();
 	var ac  = rollDie();
 	var touch_ac = rollDie();
-	var flat_act = rollDie();
+	var flat_ac = rollDie();
 </script>
 
 
@@ -26,69 +26,60 @@
 
 <?php echo form_open('character/create') ?>
 	
-<?php	
-	//name
+
+
  	<label for="name">Name: </label> 
 	<input type="input" name="name" /><br />
 
-	//class
 	<label for="class">Class: </label>
-	<?php echo form_dropdown('class', array('Bard', 'Barbarian', 'Cleric', 'Druid', 'Fighter', 'Monk', 
-						'Paladin', 'Ranger', 'Rogue' , 'Sorcerer', 'Wizard', ))	
-	//ecl
+	<?php echo form_dropdown('class', array('Bard', 'Barbarian', 'Cleric', 
+													 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger',
+													 'Rogue' , 'Sorcerer', 'Wizard', ));	
+  ?>
 	<label for="ecl">Effective Character Level (ECL): </label> 
 	<input type="input" name="ecl" /><br />
 	
-	//race
+
 	<label for="race">Race: </label> 
-	<?php echo form_dropdown('race', array('Humans', 'Dwarves', 'Elves', 'Gnomes', 'Half-Elves', 'Half-Orcs', 
-						'Halflings'))
-	//size			
+	<?php echo form_dropdown('race', array('Humans', 'Dwarves', 'Elves', 
+																	'Gnomes', 'Half-Elves', 'Half-Orcs',
+																	'Halflings'));
+  ?>
+
 	<label for="size">Size: </label> 
 	<input type="input" name="size" /><br />
 	
-	//gender
 	<label for="gender">Gender: </label> 
-	<?php echo form_dropdown('gender', array('Female', 'Male'))
+	<?php echo form_dropdown('gender', array('Female', 'Male'));  ?>
 	
-	//alignment			
+
 	<label for="alignment">Alignment: </label> 
 	<input type="input" name="alignment" /><br />
 
-	//deity			
+			
 	<label for="deity">Deity: </label> 
 	<input type="input" name="deity" /><br />
 	
-	//height
+	
 	<label for="height">Height: </label>
 	<input type="input" name="height" /><br />
 	
-	//weight
+	
 	<label for="weight">Weight: </label>
 	<input type="input" name="weight" /><br />
 	
-	//looks  I thinks this is right.. -Toy
+	
 	<label for="looks">Looks: </label>
-	<input type="text" name="looks"  class="textbox" /><br />
+
+<?php
 	$textarea = Array ("name" => "looks", "cols" => "50", "row" => "10");
 	echo form_textarea($textarea);
-	
-	//weight
-	<label for="weight">Weight: </label>
-	<input type="input" name="weight" /><br />
+?>
 	
 	
-	/*note to self
-		you may use document.write() to print the variable on screen(ie, document.write(str ).
-		but for passing this variable to php or any other server side scripts,
-		you may need to pass this variable to a hidden field(eg:input box)
-		and then from there you have to submit to php.You may not be able to pass variable 
-		directly to server since the java script is working from client side.
-	*/
-
-
-	
-	//Abiltities
+<br />
+<br />
+<br />
 	<h3>Abilities</h3><br />
 	These stats have been randomly generated<br />
 	<ul>
@@ -106,13 +97,6 @@
 	    <li style="list-style-type:none;">touch_ac: <script>document.write(touch_ac)</script> </li>
 	    <li style="list-style-type:none;">flat_ac: <script>document.write(flat_ac)</script> </li> 
 	  </ul>
-
-
-
-
-
-
-
 
 	<input type="submit" name="submit" value="Create Character" /> 
 
