@@ -15,7 +15,7 @@
 			<?php echo ul($nav['links'], $nav['attributes']); ?>
 		</nav>
 		<?php if($loginInfo['nLog'] === TRUE) { ?>	
-		<div id="login">
+		<div class="login">
 			<h2>Log in</h2>
             <?php echo validation_errors(); ?>
 				<form action="http://www.noleptr.com/gnolls/phpBB3/ucp.php?mode=login" method="post">
