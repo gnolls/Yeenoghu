@@ -2,9 +2,9 @@
 <h2>Choose a Class</h2>
 
 <?php
- $imgPath = base_url() ."assets/img/";
+ $imgPath = '<img src="'.base_url() .'assets/img/" alt="An  image">';
  $urlPath = site_url("spells/classes/");
- echo anchor($urlPath."bard", $imgPath."bard");
+ echo anchor($urlPath."/bard", $imgPath."/bard");
 ?>
 </div>
 
