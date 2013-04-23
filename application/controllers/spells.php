@@ -56,7 +56,7 @@ class Spells extends CI_Controller {
 	}
 
 
-public function class($class = FALSE)
+public function classes($class = FALSE)
 	{
 		$classes = array('bard', 'claric', 'druid', 'paladin', 'ranger', 'wizard', 'sorcerer' );
 		
@@ -80,7 +80,7 @@ public function class($class = FALSE)
 			$data['class'] = $class;
 			$this->load->view('templates/header', $data);
 			$data['spells'] = $this->spells_model->get_spells($class);
-			$this->load->view('spells/class', $data);
+			$this->load->view('spells/classes', $data);
 			$this->load->view('templates/footer');
 		}
 		else
