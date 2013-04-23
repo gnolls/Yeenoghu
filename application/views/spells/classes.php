@@ -7,10 +7,3 @@
 <?php endforeach; ?>	
 </div>
 
-<?php if($loginInfo['nLog'] === TRUE) {  //echo loginPage?>	
-
-<?php }else { ?>
-	<div id="login">
-	Welcome back <?php echo $loginInfo['username']; ?>!
-	</div>
-<?php } ?>

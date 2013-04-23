@@ -17,7 +17,7 @@
 
     </header>
   </div>	
-<div id="container" class="wrapper">
+<div class="wrapper">
 	<?php if($loginInfo['nLog'] === TRUE) { ?>	
 <div class="login">
 	<h2>Log in</h2>
