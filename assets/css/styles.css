@@ -223,14 +223,15 @@ nav a:active {color:#CDC092; text-decoration:underline;}
 .login 
 {
 	float:right;
-	width:175px;
+	width:225px;
 }
 
 footer {
 	/*width:960px;*/
 	margin:10px auto 35px;
 	/*background: url(../img/footer-rule.png) no-repeat top center;*/
-	border-top: ;
+	position:absolute;
+	bottom:0;
 	text-align:center;
 	font-size:.8em;
 	color:#8B7241;
