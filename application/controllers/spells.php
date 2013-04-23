@@ -54,10 +54,12 @@ class Spells extends CI_Controller {
 		$this->load->view('spells/view', $data);
 		$this->load->view('templates/footer');
 	}
-}
+
 
 public function class($class = FALSE)
 	{
+		$classes = array('bard', 'claric', 'druid', 'paladin', 'ranger', 'wizard', 'sorcerer' );
+		
 		$data['title'] = "View Class Spells";
 		$menu = new Nav;
 		$data['nav'] = $menu->get_Nav();
@@ -73,9 +75,19 @@ public function class($class = FALSE)
 		 $data['loginInfo']['nLog'] = TRUE;
 		}
 
-		$this->load->view('templates/header', $data);
-		$data['spells'] = $this->spells_model->get_spells($class);
-		$this->load->view('spells/class', $data);
-		$this->load->view('templates/footer');
+		if(in_array($class.tolower(), $classes)
+		{
+			$data['class'] = $class;
+			$this->load->view('templates/header', $data);
+			$data['spells'] = $this->spells_model->get_spells($class);
+			$this->load->view('spells/class', $data);
+			$this->load->view('templates/footer');
+		}
+		else
+		{
+			$this->load->view('templates/header', $data);
+			$this->load->view('spells/index', $data);
+			$this->load->view('templates/footer');
+		}
 	}
 }
