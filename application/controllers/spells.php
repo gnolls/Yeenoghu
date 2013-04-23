@@ -79,7 +79,7 @@ public function classes($class = FALSE)
 		{
 			$data['class'] = $class;
 			$this->load->view('templates/header', $data);
-			$data['spells'] = $this->spells_model->get_spells($class);
+			$data['spells'] = $this->spells_model->get_spells_by_class($class);
 			$this->load->view('spells/classes', $data);
 			$this->load->view('templates/footer');
 		}
