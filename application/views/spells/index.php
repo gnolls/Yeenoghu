@@ -3,7 +3,7 @@
 
 <?php
  $imgPath = base_url() ."assets/img/";
- $urlPath = site_url("spells/classes/")
+ $urlPath = site_url("spells/classes/");
  echo anchor($urlPath."bard", $imgPath."bard");
 ?>
 </div>
