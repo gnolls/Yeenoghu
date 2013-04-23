@@ -193,7 +193,7 @@ header{
 
 nav{
 	display:block;
-	width:850px;
+	width:800px;
 	margin-top:0px;
 	padding:4px;
 }
@@ -220,7 +220,7 @@ nav a:active {color:#CDC092; text-decoration:underline;}
 	box-shadow: 5px 5px 3px #888888;
 }
 
-#login 
+.login 
 {
 	float:right;
 	width:100px;
