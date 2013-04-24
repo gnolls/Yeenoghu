@@ -4,6 +4,7 @@ class Character_model extends CI_Model {
 	public function __construct()
 	{
 		$this->load->database();
+	  $this->load->library('phpbb');
 	}
 
 	public function get_character($userID = FALSE)
@@ -23,6 +24,8 @@ class Character_model extends CI_Model {
 	public function set_character($userId)
 	{
 		$this->load->helper('url');
+
+				
 
 		$data = array(
 			'user_id' => $userId,

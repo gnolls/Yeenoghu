@@ -68,7 +68,7 @@ public function classes($class = FALSE)
 		$data['nav'] = $menu->get_Nav();
 		if($this->phpbb->isLoggedIn() === TRUE)
 		{
-	    $data['userSID'] = $this->phpbb->get_session();
+	    $data['userSID'] = $this->phpbb->session_id();
    		$data['userAvatar'] = $this->phpbb->getUserAvatar(0,0,0,0);
 			$userId = $this->phpbb->getUserInfo('user_id');
 			$username = $this->phpbb->getUserInfo('username');

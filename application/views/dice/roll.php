@@ -1,4 +1,4 @@
 <div id="body">
-You rolled a <?php echo $roll; ?>
+<h1>Your fate is sealed! You rolled: <?php echo $roll; ?>!!</h1>
 
 </div>

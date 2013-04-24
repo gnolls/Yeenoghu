@@ -1,4 +1,7 @@
 <div id="body">
+<h1>Search for a spell</h1>
+
+
 <h2>Choose a Class</h2>
 
 <?php
