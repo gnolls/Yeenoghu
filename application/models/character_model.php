@@ -38,7 +38,6 @@ class Character_model extends CI_Model {
 			'class' => $this->input->post('class'),
 			'looks' => $this->input->post('looks'),
 			'weight' => $this->input->post('weight'),
-			'weight' => $this->input->post('weight')
 			);
 
 		return $this->db->insert('characters', $data);
