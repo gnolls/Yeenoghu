@@ -227,10 +227,6 @@ nav a:active {color:#CDC092; text-decoration:underline;}
 	width:200px;
 	padding-left:2px;
 	border-left: 1px;
-	border-style:dotted;
-	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
-    min-height: 100%; /* ie6 ignores min-height completely */
-    height: 100%;
 }
 
 footer {

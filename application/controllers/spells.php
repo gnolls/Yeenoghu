@@ -58,7 +58,7 @@ class Spells extends CI_Controller {
 
 public function classes($class = FALSE)
 	{
-		$classes = array('bard', 'claric', 'druid', 'paladin', 'ranger', 'wizard', 'sorcerer' );
+		$classes = array('bard', 'cleric', 'druid', 'paladin', 'ranger', 'wizard', 'sorcerer', 'barbarian' );
 		
 		$data['title'] = "View Class Spells";
 		$menu = new Nav;
