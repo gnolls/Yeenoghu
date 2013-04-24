@@ -32,25 +32,25 @@
 	<input type="input" name="name" /><br />
 
 	<label for="class">Class: </label>
-	<?php echo form_dropdown('class', array('Bard', 'Barbarian', 'Cleric', 
-													 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger',
-													 'Rogue' , 'Sorcerer', 'Wizard', ));	
+	<?php echo form_dropdown('class', array('Bard' => 'Bard', 'Barbarian' => 'Barbarian',
+ 'Cleric' => 'Cleric', 'Druid' => 'Druid' , 'Fighter' => 'Fighter' , 'Monk' => 'Monk' , 'Paladin' => 'Paladin',
+ 'Ranger' => 'Ranger', 'Rogue' => 'Rogue' , 'Sorcerer' => 'Sorcerer', 'Wizard' => 'Wizard' ));	
   ?>
 	<label for="ecl">Effective Character Level (ECL): </label> 
 	<input type="input" name="ecl" /><br />
 	
 
 	<label for="race">Race: </label> 
-	<?php echo form_dropdown('race', array('Humans', 'Dwarves', 'Elves', 
-																	'Gnomes', 'Half-Elves', 'Half-Orcs',
-																	'Halflings'));
+	<?php echo form_dropdown('race', array('Humans' => 'Humans', 'Dwarves' => 'Dwarves', 'Elves' => 'Elves', 
+																	'Gnomes' => 'Gnomes', 'Half-Elves' => 'Half-Elves', 'Half-Orcs' => 'Half-Orcs',
+																	'Halflings' => 'Halflings'));
   ?>
 
 	<label for="size">Size: </label> 
 	<input type="input" name="size" /><br />
 	
 	<label for="gender">Gender: </label> 
-	<?php echo form_dropdown('gender', array('Female', 'Male'));  ?>
+	<?php echo form_dropdown('gender', array('Female' => 'Female', 'Male' => 'Male'));  ?>
 	
 
 	<label for="alignment">Alignment: </label> 

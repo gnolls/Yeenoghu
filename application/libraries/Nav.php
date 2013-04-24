@@ -9,7 +9,7 @@ class Nav
 				anchor(site_url('dice/index'), 'Roll Dice'),
 				anchor(site_url('spells/index'), 'Spells'),
 				anchor(site_url('character/index'), 'Character'),
-				anchor("http://d20tools.net/forum/", 'Forum')
+				anchor("http://noleptr.com/gnolls/phpBB3", 'Forum')
 				);
 		return array('attributes' => $atr, 'links' => $links);
 	}  
