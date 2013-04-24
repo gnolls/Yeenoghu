@@ -26,8 +26,19 @@ class Character_model extends CI_Model {
 
 		$data = array(
 			'user_id' => $userId,
-			'name' => $this->input->post('title'),
-			'class' => $this->input->post('class')
+			'name' => $this->input->post('name'),
+			'ecl'  => $this->input->post('ecl'),
+			'race' => $this->input->post('race'),
+			'size' => $this->input->post('size'),
+			'gender' => $this->input->post('gender'),
+			'alignment' => $this->input->post('alignment'),
+			'deity' => $this->input->post('deity'),
+			'height' => $this->input->post('height'),
+			'weight' => $this->input->post('weight'),
+			'class' => $this->input->post('class'),
+			'looks' => $this->input->post('looks'),
+			'weight' => $this->input->post('weight'),
+			'weight' => $this->input->post('weight')
 			);
 
 		return $this->db->insert('characters', $data);
