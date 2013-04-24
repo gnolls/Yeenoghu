@@ -22,6 +22,7 @@ class Welcome extends CI_Controller {
 		if($this->phpbb->isLoggedIn() === TRUE)
 		{
 			$userId = $this->phpbb->getUserInfo('user_id');
+	    $data['userSID'] = $this->phpbb->session_id();
 			$username = $this->phpbb->getUserInfo('username');
 			$data['loginInfo']['userId'] = $userId;
 			$data['loginInfo']['username'] = $username;

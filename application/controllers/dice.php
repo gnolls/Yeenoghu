@@ -23,6 +23,7 @@
 				$userId = $this->phpbb->getUserInfo('user_id');
 				$username = $this->phpbb->getUserInfo('username');
 				$data['loginInfo']['userId'] = $userId;
+				$data['userSID'] = $this->phpbb->session_id();
 				$data['loginInfo']['username'] = $username;
 			}
 			else //User was not loggeed in
@@ -50,6 +51,7 @@
 				if($this->phpbb->isLoggedIn() === TRUE)						//Login check this should be compacted some how.
 				{
 					$userId = $this->phpbb->getUserInfo('user_id');
+					$data['userSID'] = $this->phpbb->session_id();
 					$username = $this->phpbb->getUserInfo('username');
 					$data['loginInfo']['userId'] = $userId;
 					$data['loginInfo']['username'] = $username;
@@ -69,6 +71,7 @@
 				{
 					$userId = $this->phpbb->getUserInfo('user_id');
 					$username = $this->phpbb->getUserInfo('username');
+					$data['userSID'] = $this->phpbb->session_id();
 					$data['loginInfo']['userId'] = $userId;
 					$data['loginInfo']['username'] = $username;
 				}

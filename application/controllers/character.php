@@ -19,6 +19,7 @@ class Character extends CI_Controller {
 		{
 			$userId = $this->phpbb->getUserInfo('user_id');
 			$username = $this->phpbb->getUserInfo('username');
+			$data['userSID'] = $this->phpbb->session_id();
 			$data['loginInfo']['userId'] = $userId;
 			$data['loginInfo']['username'] = $username;
 		  
@@ -45,6 +46,8 @@ class Character extends CI_Controller {
 		$data['nav'] = $menu->get_Nav();
 		if($this->phpbb->isLoggedIn() === TRUE)
 		{
+		
+	    $data['userSID'] = $this->phpbb->session_id();
 			$userId = $this->phpbb->getUserInfo('user_id');
 			$username = $this->phpbb->getUserInfo('username');
 			$data['loginInfo']['userId'] = $userId;
