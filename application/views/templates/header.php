@@ -35,7 +35,7 @@
 	</div>
 <?php }else { ?>
 	<div class="login">
-	Welcome back <?php echo $loginInfo['username']; ?>!
+	Welcome back <?php echo $loginInfo['username']; ?>!<?php echo $userAvatar ?> <br />
 	<a href="http://noleptr.com/gnolls/phpBB3/ucp.php?mode=logout&sid=<?php echo $userSID; ?>">logout</a>
 	</div>
 <?php } ?>

@@ -10,4 +10,11 @@ class Die_model extends CI_Model {
         return mt_rand(1, $this->input->post('numSides'));
     }
 
+    public function rollDice_int($num)
+    {
+			if($num > 21)
+				return mt_rand(1, 21);
+			else
+        return mt_rand(1, $num);
+    }
 }

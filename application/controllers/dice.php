@@ -22,6 +22,7 @@
 			{
 				$userId = $this->phpbb->getUserInfo('user_id');
 				$username = $this->phpbb->getUserInfo('username');
+   		  $data['userAvatar'] = $this->phpbb->getUserAvatar(0,0,0,0);
 				$data['loginInfo']['userId'] = $userId;
 				$data['userSID'] = $this->phpbb->session_id();
 				$data['loginInfo']['username'] = $username;
@@ -36,7 +37,7 @@
 		}
 
 
-		public function roll()
+		public function roll($num = FALSE)
 		{
 			$this->load->helper('form');
 			$this->load->library('form_validation'); 
@@ -44,47 +45,74 @@
 			$data['nav'] = $menu->get_Nav();
 			$data['title'] = "Your fate is...";
 			$this->form_validation->set_rules('numSides', 'Number of Sides', 'xss_clean|required|is_natural_no_zero');
-
-			if($this->form_validation->run() == FALSE) 						//check to see if the filled out the form
+	
+			if($num === FALSE)
 			{
+				if($this->form_validation->run() == FALSE) 						//check to see if the filled out the form
+				{
 
-				if($this->phpbb->isLoggedIn() === TRUE)						//Login check this should be compacted some how.
-				{
-					$userId = $this->phpbb->getUserInfo('user_id');
-					$data['userSID'] = $this->phpbb->session_id();
-					$username = $this->phpbb->getUserInfo('username');
-					$data['loginInfo']['userId'] = $userId;
-					$data['loginInfo']['username'] = $username;
-				}
-				else
-				{
-					$data['loginInfo']['nLog'] = TRUE;
-				}                                                             //end of login check
+					if($this->phpbb->isLoggedIn() === TRUE)						//Login check this should be compacted some how.
+					{
+						$userId = $this->phpbb->getUserInfo('user_id');
+						$data['userSID'] = $this->phpbb->session_id();
+						$data['userAvatar'] = $this->phpbb->getUserAvatar(0,0,0,0);
+						$username = $this->phpbb->getUserInfo('username');
+						$data['loginInfo']['userId'] = $userId;
+						$data['loginInfo']['username'] = $username;
+					}
+					else
+					{
+						$data['loginInfo']['nLog'] = TRUE;
+					}                                                             //end of login check
 
-				$this->load->view('templates/header', $data);
-				$this->load->view('dice/index', $data);                      //load the data into the view
-				$this->load->view('templates/footer');
-				}
-			else  															//Form validation returns true a.k.a Sucessfull Roll parameters 
-			{
-				if($this->phpbb->isLoggedIn() === TRUE)						//Login check this should be compacted some how.
+					$this->load->view('templates/header', $data);
+					$this->load->view('dice/index', $data);                      //load the data into the view
+					$this->load->view('templates/footer');
+					}
+				else  															//Form validation returns true a.k.a Sucessfull Roll parameters 
 				{
-					$userId = $this->phpbb->getUserInfo('user_id');
-					$username = $this->phpbb->getUserInfo('username');
-					$data['userSID'] = $this->phpbb->session_id();
-					$data['loginInfo']['userId'] = $userId;
-					$data['loginInfo']['username'] = $username;
-				}
-				else
-				{
-					$data['loginInfo']['nLog'] = TRUE;
-				}                                                           //end of login check
+					if($this->phpbb->isLoggedIn() === TRUE)						//Login check this should be compacted some how.
+					{
+						$userId = $this->phpbb->getUserInfo('user_id');
+						$username = $this->phpbb->getUserInfo('username');
+						$data['userSID'] = $this->phpbb->session_id();
+						$data['loginInfo']['userId'] = $userId;
+						$data['loginInfo']['username'] = $username;
+						}
+						else
+						{
+							$data['loginInfo']['nLog'] = TRUE;
+						}                                                           //end of login check
 
-				$this->load->view('templates/header', $data);
-				$data['roll'] = $this->die_model->rollDice();				//Send the rolled value to the view
-				$this->load->view('dice/roll', $data);
-				$this->load->view('templates/footer');
+						$this->load->view('templates/header', $data);
+						$data['roll'] = $this->die_model->rollDice();				//Send the rolled value to the view
+						$this->load->view('dice/roll', $data);
+						$this->load->view('templates/footer');
 			}
-		}//end roll function
+		}
+    else //check if the  button they clicked is an int
+		{
+			if(TRUE)
+			{
+				if($this->phpbb->isLoggedIn() === TRUE)						//Login check this should be compacted some how.
+					{
+						$userId = $this->phpbb->getUserInfo('user_id');
+						$username = $this->phpbb->getUserInfo('username');
+						$data['userSID'] = $this->phpbb->session_id();
+						$data['loginInfo']['userId'] = $userId;
+						$data['loginInfo']['username'] = $username;
+					}
+					else
+					{
+						$data['loginInfo']['nLog'] = TRUE;
+					}                                                           //end of login check
+
+						$this->load->view('templates/header', $data);
+						$data['roll'] = $this->die_model->rollDice_int($num);				//Send the rolled value to the view
+						$this->load->view('dice/roll', $data);
+						$this->load->view('templates/footer');
+			}
+
+		}
+	}//end roll function
 }
-?>

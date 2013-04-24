@@ -20,6 +20,7 @@ class Character extends CI_Controller {
 			$userId = $this->phpbb->getUserInfo('user_id');
 			$username = $this->phpbb->getUserInfo('username');
 			$data['userSID'] = $this->phpbb->session_id();
+   		$data['userAvatar'] = $this->phpbb->getUserAvatar(0,0,0,0);
 			$data['loginInfo']['userId'] = $userId;
 			$data['loginInfo']['username'] = $username;
 		  
@@ -49,6 +50,7 @@ class Character extends CI_Controller {
 		
 	    $data['userSID'] = $this->phpbb->session_id();
 			$userId = $this->phpbb->getUserInfo('user_id');
+   		$data['userAvatar'] = $this->phpbb->getUserAvatar(0,0,0,0);
 			$username = $this->phpbb->getUserInfo('username');
 			$data['loginInfo']['userId'] = $userId;
 			$data['loginInfo']['username'] = $username;

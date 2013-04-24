@@ -65,6 +65,11 @@ class Phpbb
 	 */
 	public function getUserAvatar($avatar, $avatar_type, $avatar_width, $avatar_height)
 	{
+   $avatar = $this->_user->data['user_avatar'];
+   $avatar_type = $this->_user->data['user_avatar_type'];
+	 $avatar_width = $this->_user->data['user_avatar_width'];
+   $avatar_height = $this->_user->data['user_avatar_height']; 
+
 		if (empty($avatar) || !$avatar_type)
 		{
 			return '';
@@ -74,11 +79,11 @@ class Phpbb
 		switch ($avatar_type)
 		{
 			case 1:
-				$avatar_img = "/forum/download/file.php?avatar=";
+				$avatar_img = "/gnolls/phpBB3/download/file.php?avatar=";
 			break;
 	
 			case 2:
-				$avatar_img = '/forum/images/avatars/gallery/';
+				$avatar_img = '/gnolls/phpBB3/images/avatars/gallery/';
 			break;
 	
 			case 3:

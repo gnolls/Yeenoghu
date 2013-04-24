@@ -17,8 +17,9 @@ class Spells extends CI_Controller {
 		$data['nav'] = $menu->get_Nav();
 		if($this->phpbb->isLoggedIn() === TRUE)
 		{
-	    $data['userSID'] = $this->phpbb->get_session();
+	    $data['userSID'] = $this->phpbb->session_id();
    		$userId = $this->phpbb->getUserInfo('user_id');
+   		$data['userAvatar'] = $this->phpbb->getUserAvatar(0,0,0,0);
 			$username = $this->phpbb->getUserInfo('username');
 			$data['loginInfo']['userId'] = $userId;
 			$data['loginInfo']['username'] = $username;
@@ -68,6 +69,7 @@ public function classes($class = FALSE)
 		if($this->phpbb->isLoggedIn() === TRUE)
 		{
 	    $data['userSID'] = $this->phpbb->get_session();
+   		$data['userAvatar'] = $this->phpbb->getUserAvatar(0,0,0,0);
 			$userId = $this->phpbb->getUserInfo('user_id');
 			$username = $this->phpbb->getUserInfo('username');
 			$data['loginInfo']['userId'] = $userId;

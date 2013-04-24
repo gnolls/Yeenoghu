@@ -23,6 +23,7 @@ class Welcome extends CI_Controller {
 		{
 			$userId = $this->phpbb->getUserInfo('user_id');
 	    $data['userSID'] = $this->phpbb->session_id();
+			$data['userAvatar'] = $this->phpbb->getUserAvatar(0,0,0,0);
 			$username = $this->phpbb->getUserInfo('username');
 			$data['loginInfo']['userId'] = $userId;
 			$data['loginInfo']['username'] = $username;
