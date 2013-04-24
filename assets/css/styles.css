@@ -224,7 +224,10 @@ nav a:active {color:#CDC092; text-decoration:underline;}
 .login 
 {
 	float:right;
-	width:225px;
+	width:200px;
+	padding-left:2px;
+	border-left: 1px;
+	border-style:dotted;
 }
 
 footer {
