@@ -1,6 +1,6 @@
 	<div id="body">
 	<h1>Welcome to Dungeon Organizer</h1>
-	<p>Dungeon Organizer is an interactive website for players of Dungeons & Dragons 3.5, that will allow for:
+	<p>Dungeon Organizer is an interactive website for players of Dungeons & Dragons 3.5, that will allow for:</p>
 	<ul>
 		<li style="list-style-type:none;">Creation/Management of Character Sheets.</li>
 
@@ -10,7 +10,7 @@
 
 	    <li style="list-style-type:none;">Conversation and long distance play via a Bulletin Board.</li>
 	</ul>
-	</p>
+
 	</div>
 
 
