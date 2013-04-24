@@ -4,7 +4,8 @@
   <p><b>Spell Name: </b> <?php echo $spell['name']; ?>
 	<br />
   <b>Description: </b><?php echo $spell['description']; ?> 
-  <b> Level: </b> <?php echo $spell['description']; </p>
+  <br />
+  <b> Level: </b> <?php echo $spell['level']; ?></p>
   <br />
 <?php endforeach; ?>	
 </div>

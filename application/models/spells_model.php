@@ -23,7 +23,7 @@ class Spells_model extends CI_Model {
 
 	public function get_spells_by_class($class = FALSE)
 	{
-			$this->db->group_by("level");
+			$this->db->order_by("level", "asc");
 			$query = $this->db->get_where('spells', array('class' => $class));
 			return $query->result_array();	
 	
