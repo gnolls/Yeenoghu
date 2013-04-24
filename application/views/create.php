@@ -26,7 +26,7 @@
 
 <?php echo form_open('character/create') ?>
 	
-<?php	
+	
 	//name
  	<label for="name">Name: </label> 
 	<input type="input" name="name" /><br />
@@ -34,7 +34,7 @@
 	//class
 	<label for="class">Class: </label>
 	<?php echo form_dropdown('class', array('Bard', 'Barbarian', 'Cleric', 'Druid', 'Fighter', 'Monk', 
-						'Paladin', 'Ranger', 'Rogue' , 'Sorcerer', 'Wizard', ))	
+						'Paladin', 'Ranger', 'Rogue' , 'Sorcerer', 'Wizard', ))	?>
 	//ecl
 	<label for="ecl">Effective Character Level (ECL): </label> 
 	<input type="input" name="ecl" /><br />
@@ -42,14 +42,14 @@
 	//race
 	<label for="race">Race: </label> 
 	<?php echo form_dropdown('race', array('Humans', 'Dwarves', 'Elves', 'Gnomes', 'Half-Elves', 'Half-Orcs', 
-						'Halflings'))
+						'Halflings'))?>
 	//size			
 	<label for="size">Size: </label> 
 	<input type="input" name="size" /><br />
 	
 	//gender
 	<label for="gender">Gender: </label> 
-	<?php echo form_dropdown('gender', array('Female', 'Male'))
+	<?php echo form_dropdown('gender', array('Female', 'Male'))?>
 	
 	//alignment			
 	<label for="alignment">Alignment: </label> 
